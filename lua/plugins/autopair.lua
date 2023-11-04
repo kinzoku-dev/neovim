@@ -1,4 +1,4 @@
-return { 
-    'altermo/ultimate-autopair.nvim' 
-    event={'InsertEnter','CmdlineEnter'},
+return {
+  'altermo/ultimate-autopair.nvim',
+  event = { 'InsertEnter', 'CmdlineEnter' },
 }
