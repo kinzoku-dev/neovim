@@ -1,4 +1,5 @@
 return {
-  'altermo/ultimate-autopair.nvim',
-  event = { 'InsertEnter', 'CmdlineEnter' },
+  'windwp/nvim-autopairs',
+  event = 'InsertEnter',
+  opts = {},
 }
