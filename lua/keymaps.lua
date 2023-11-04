@@ -9,6 +9,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('x', '<leader>p', [["_dP]]) -- paste WON'T copy
 vim.keymap.set('n', 'Q', '<nop>')
 vim.keymap.set('n', '<leader><Tab>', '<cmd>bnext<cr>')
+vim.keymap.set('n', '<C-x>', '<cmd>bdel<CR>')
 
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
