@@ -1,7 +1,7 @@
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
-vim.keymap.set({ 'i', 'v' }, '<C-c>', '<Esc>')
+vim.keymap.set({ 'i', 'v' }, '<C-c>', '<Esc>', { noremap = true })
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
