@@ -5,7 +5,7 @@ return {
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   keys = {
     {
-      '<C-n>',
+      '<leader>op',
       function()
         require('oil').toggle_float()
       end,
