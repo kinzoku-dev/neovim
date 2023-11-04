@@ -1,5 +1,6 @@
 <h1 align="center"><img src="./.github/assets/nixvim-dark.webp" width=255></h1>
 <h2 align="center">My Neovim config built with <a href="https://nvchad.com/">lazy.nvim</a>, packaged as an (optional) Nix Flake.</h2>
+<h2 align="center">Forked from <a href="https://github.com/IogaMaster">IogaMaster</a>'s <a href="https://github.com/IogaMaster/neovim">neovim configuration</a></h2>
 
 
 <h1 align="center">
@@ -7,13 +8,13 @@
   <br>
   <br>
   <div>
-    <a href="https://github.com/Iogamaster/Neovim/issues">
-        <img src="https://img.shields.io/github/issues/Iogamaster/Neovim?color=fab387&labelColor=303446&style=for-the-badge">
+    <a href="https://github.com/kinzoku-dev/neovim/issues">
+        <img src="https://img.shields.io/github/issues/kinzoku-dedv/neovim?color=fab387&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/Iogamaster/Neovim/stargazers">
-        <img src="https://img.shields.io/github/stars/Iogamaster/Neovim?color=ca9ee6&labelColor=303446&style=for-the-badge">
+    <a href="https://github.com/kinzoku-dev/neovim/stargazers">
+        <img src="https://img.shields.io/github/stars/kinzoku-dev/neovim?color=ca9ee6&labelColor=303446&style=for-the-badge">
     </a>
-    <a href="https://github.com/Iogamaster/Neovim">
+    <a href="https://github.com/kinzoku-dev/neovim">
         <img src="https://img.shields.io/github/repo-size/Iogamaster/Neovim?color=ea999c&labelColor=303446&style=for-the-badge">
     </a>
     <a href="https://github.com/Iogamaster/Neovim/blob/main/.github/LICENCE">
