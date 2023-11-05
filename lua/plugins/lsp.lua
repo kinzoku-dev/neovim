@@ -153,6 +153,8 @@ return {
         nix = { 'alejandra' },
         rust = { 'rustfmt' },
         markdown = { 'mdformat' },
+        typescript = { 'prettier' },
+        typescriptreact = { 'pretter' },
       },
       format_on_save = {
         lsp_fallback = true,
