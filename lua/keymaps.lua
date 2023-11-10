@@ -23,6 +23,9 @@ vim.keymap.set('n', '<leader>v-', '<cmd> vertical resize -5')
 vim.keymap.set('n', '<leader>h+', '<cmd> resize +5')
 vim.keymap.set('n', '<leader>h-', '<cmd> resize -5')
 
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
 vim.keymap.set('n', '<leader>rp', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>') -- Replace all instance of current word in file
 
 -- Unset arrow keys
