@@ -78,6 +78,7 @@ return {
       'tailwindcss',
       'dartls',
       'gopls',
+      'bashls',
     }
 
     require('lspconfig').nil_ls.setup {
