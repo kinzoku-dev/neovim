@@ -17,11 +17,11 @@ vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
 
-vim.keymap.set('n', '<leader>v+', '<cmd> vertical resize +5')
-vim.keymap.set('n', '<leader>v-', '<cmd> vertical resize -5')
+vim.keymap.set('n', '<leader>vp', '<cmd> vertical resize +5 <CR>')
+vim.keymap.set('n', '<leader>vm', '<cmd> vertical resize -5 <CR>')
 
-vim.keymap.set('n', '<leader>h+', '<cmd> resize +5')
-vim.keymap.set('n', '<leader>h-', '<cmd> resize -5')
+vim.keymap.set('n', '<leader>hp', '<cmd> resize +5 <CR>')
+vim.keymap.set('n', '<leader>hm', '<cmd> resize -5 <CR>')
 
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
