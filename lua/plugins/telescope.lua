@@ -87,4 +87,13 @@ return {
       require('telescope').load_extension 'media_files'
     end,
   },
+  {
+    'paopaol/telescope-git-diffs.nvim',
+    config = function()
+      require('telescope').load_extension 'git_diffs'
+    end,
+    keys = {
+      { '<leader>fd', '<cmd>Telescope git_diffs  diff_commits<CR>', desc = 'Browse git diffs' },
+    },
+  },
 }
