@@ -6,9 +6,7 @@ return {
   keys = {
     {
       '<leader>op',
-      function()
-        require('oil').toggle_float()
-      end,
+      '<cmd>Oil<cr>',
       desc = 'File Browser',
     },
   },
