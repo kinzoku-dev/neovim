@@ -28,6 +28,7 @@ vim.opt.updatetime = 50
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
+vim.g.bookmark_no_default_key_mappings = true
 
 -- Neovide
 if vim.g.neovide then

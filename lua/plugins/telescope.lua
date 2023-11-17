@@ -96,4 +96,13 @@ return {
       { '<leader>fd', '<cmd>Telescope git_diffs  diff_commits<CR>', desc = 'Browse git diffs' },
     },
   },
+  {
+    'tom-anders/telescope-vim-bookmarks.nvim',
+    config = function()
+      require('telescope').load_extension 'vim_bookmarks'
+    end,
+    keys = {
+      { '<leader>fm', ':Telescope vim_bookmarks <Tab>', desc = 'Browse bookmarks' },
+    },
+  },
 }
