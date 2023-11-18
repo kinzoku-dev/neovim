@@ -79,6 +79,7 @@ return {
       'dartls',
       'gopls',
       'bashls',
+      'jedi_language_server',
     }
 
     require('lspconfig').nil_ls.setup {
