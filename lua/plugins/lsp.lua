@@ -86,7 +86,6 @@ return {
       settings = {
         ['nil'] = {
           nix = {
-            maxMemoryMB = 7680,
             flake = {
               autoArchive = true,
               autoEvalInputs = true,
@@ -156,6 +155,7 @@ return {
         rust = { 'rustfmt' },
         markdown = { 'mdformat' },
         typescript = { 'prettier' },
+        javascript = { 'prettier' },
         typescriptreact = { 'pretter' },
       },
       format_on_save = {
