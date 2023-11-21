@@ -157,6 +157,7 @@ return {
         typescript = { 'prettier' },
         javascript = { 'prettier' },
         typescriptreact = { 'pretter' },
+        go = { 'gofumpt' },
       },
       format_on_save = {
         lsp_fallback = true,
