@@ -3,7 +3,7 @@ return {
   build = ':TSUpdate',
   config = function()
     require('nvim-treesitter.configs').setup {
-      ensure_installed = { 'lua', 'nix', 'typescript' },
+      ensure_installed = { 'lua', 'nix', 'typescript', 'rust', 'go' },
 
       sync_install = false,
       auto_install = true,
