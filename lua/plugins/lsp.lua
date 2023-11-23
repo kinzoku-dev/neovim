@@ -160,7 +160,7 @@ return {
         javascript = { 'prettier' },
         typescriptreact = { 'prettier' },
         go = { 'gofumpt' },
-        html = { 'htmlbeautifier' },
+        html = { 'prettier' },
       },
       format_on_save = {
         lsp_fallback = true,
