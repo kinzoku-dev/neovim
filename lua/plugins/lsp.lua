@@ -158,7 +158,7 @@ return {
         markdown = { 'mdformat' },
         typescript = { 'prettier' },
         javascript = { 'prettier' },
-        typescriptreact = { 'pretter' },
+        typescriptreact = { 'prettier' },
         go = { 'gofumpt' },
         html = { 'htmlbeautifier' },
       },
