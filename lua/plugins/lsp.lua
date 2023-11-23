@@ -80,6 +80,8 @@ return {
       'gopls',
       'bashls',
       'jedi_language_server',
+      'html',
+      'cssls',
     }
 
     require('lspconfig').nil_ls.setup {
