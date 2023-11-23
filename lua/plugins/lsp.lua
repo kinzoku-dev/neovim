@@ -162,6 +162,7 @@ return {
         go = { 'gofumpt' },
         html = { 'prettier' },
         css = { 'prettier' },
+        scss = { 'prettier' },
       },
       format_on_save = {
         lsp_fallback = true,
