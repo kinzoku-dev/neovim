@@ -187,5 +187,16 @@ return {
         require('lint').try_lint()
       end,
     })
+
+    local lsnip = require 'luasnip'
+    local s = lsnip.snippet
+    local t = lsnip.text_node
+    local i = lsnip.insert_node
+
+    lsnip.add_snippets('nix', {
+      s('flakefalse', {
+        t 'flake = false;',
+      }),
+    })
   end,
 }
