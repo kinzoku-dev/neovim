@@ -192,11 +192,153 @@ return {
     local s = lsnip.snippet
     local t = lsnip.text_node
     local i = lsnip.insert_node
+    local extras = require 'luasnip.extras'
+    local rep = extras.rep
+    local fmt = require('luasnip.extras.fmt').fmt
 
     lsnip.add_snippets('nix', {
-      s('flakefalse', {
-        t 'flake = false;',
+      s('mkIfce', {
+        t 'mkIf cfg.enable',
+        i(1),
+      }),
+      s('mkIfcfg', {
+        t 'mkIf cfg.',
+        i(1),
+      }),
+      s('mkIfcon', {
+        t 'mkIf config.',
+        i(1),
+      }),
+      s(
+        'nebcfg',
+        fmt(
+          [[
+            with lib.nebula; let
+                cfg = config.{};
+            in {{
+                options.{} = with types; {{
+                    {}
+                }};
+
+                config = mkIf cfg.enable {{
+                    {}
+                }};
+            }}
+        ]],
+          {
+            i(1),
+            rep(1),
+            i(2),
+            i(3),
+          }
+        )
+      ),
+      s(
+        'nebbinds',
+        fmt(
+          [[
+            {{
+                config,
+                options,
+                pkgs, 
+                lib,
+                ...
+            }}:
+            {}
+        ]],
+          {
+            i(1),
+          }
+        )
+      ),
+      s(
+        'enableopt',
+        fmt(
+          [[
+            enable = mkBoolOpt {} "Enable {}";
+          ]],
+          {
+            i(1, 'false'),
+            i(2),
+          }
+        )
+      ),
+      s(
+        'optblock',
+        fmt(
+          [[
+            options.{} = with types; {{
+              {}
+            }};
+          ]],
+          {
+            i(1),
+            i(2),
+          }
+        )
+      ),
+      s(
+        'stropt',
+        fmt(
+          [[
+            {} = mkOpt types.str "{}" "{}";
+        ]],
+          {
+            i(1),
+            i(2),
+            i(3),
+          }
+        )
+      ),
+      s(
+        'ghinput',
+        fmt(
+          [[
+            {} = {{
+                url = "github:{}";
+            }};
+        ]],
+          {
+            i(1),
+            i(2),
+          }
+        )
+      ),
+    })
+    lsnip.add_snippets('rust', {
+      s('parse', {
+        t 'parse().expect("',
+        i(1),
+        t '")',
+      }),
+      s('printthatshit', {
+        t 'println!("{}", ',
+        i(1),
+        t ')',
+      }),
+      s('adeadcode', {
+        t '#[allow(dead_code)]',
+      }),
+      s('aunusedvars', {
+        t '#[allow(unused_variables)]',
       }),
     })
+    vim.keymap.set({ 'i', 's' }, '<Right>', function()
+      if lsnip.choice_active() then
+        lsnip.change_choice(1)
+      end
+    end)
+
+    vim.keymap.set({ 'i', 's' }, '<Up>', function()
+      if lsnip.expand_or_jumpable() then
+        lsnip.expand_or_jump()
+      end
+    end, { silent = true })
+
+    vim.keymap.set({ 'i', 's' }, '<Down>', function()
+      if lsnip.jumpable(-1) then
+        lsnip.jump(-1)
+      end
+    end, { silent = true })
   end,
 }
