@@ -317,11 +317,36 @@ return {
         i(1),
         t ')',
       }),
-      s('adeadcode', {
+      s('al_dc', {
         t '#[allow(dead_code)]',
       }),
-      s('aunusedvars', {
+      s('al_uuvar', {
         t '#[allow(unused_variables)]',
+      }),
+      s('al_uumut', {
+        t '#[allow(unused_mut)]',
+      }),
+      s('uw', {
+        t '.unwrap()',
+      }),
+      s('ex', {
+        t 'expect("',
+        i(1),
+        t '")',
+      }),
+      s('ts', {
+        t 'to_string()',
+      }),
+      s('as', {
+        t 'as_str()',
+      }),
+      s('snew', {
+        t 'String::new()',
+      }),
+      s('sfrom', {
+        t 'String::from("',
+        i(1),
+        t '")',
       }),
     })
     vim.keymap.set({ 'i', 's' }, '<Right>', function()
