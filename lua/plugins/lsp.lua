@@ -82,6 +82,7 @@ return {
       'jedi_language_server',
       'html',
       'cssls',
+      'csharp_ls',
     }
 
     require('lspconfig').nil_ls.setup {
