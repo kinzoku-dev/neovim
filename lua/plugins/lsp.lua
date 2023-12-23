@@ -83,6 +83,7 @@ return {
       'html',
       'cssls',
       'csharp_ls',
+      'gdscript',
     }
 
     require('lspconfig').nil_ls.setup {
